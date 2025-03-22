@@ -8,183 +8,118 @@
     font-family: "Roboto", serif;
 }
 
-nav ul li a{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration: none;
+main{
+    color: #272623;
 }
 
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: #000000;
-    text-decoration: underline;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-}
-
-.badge{
-    background: #eee;
-    padding: 4px 8px;
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 150%; /* 21px */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../img/hero-bg.jpg') lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f7f7f5;
+    text-align: center;
 }
 
 /*Buttons*/
-button{
+.button{
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    text-decoration: none;
 }
 
 .button-primary{
-    border: 1px solid #000000;
-    background: #000000;
+    border: 1px solid #a6a498;
+    background: #a6a498;
     color: #ffffff;
 }
 
 .button-secondary{
-    border: 1px solid #000000;
+    border: 1px solid #a6a498;
     background: none;
-    color: #000000;
+    color: #a6a498;
 }
 
-/*Form*/
-input[type=submit]{
-    border: 1px solid #000000;
-    background: #000000;
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
+.content-section{
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-input[type=text], input[type=email]{
-    border: 1px solid #000000;
-    height: 48px;
-    padding: 12px;
+.content-section .col-lg-6{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-input[type=checkbox]{
-    border: 1px solid #000000;
-    background: #ffffff;
-    width: 18px;
-    height: 18px;
+.content-section img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
-label{
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: 400;
+@media (max-width: 992px){
+    .content-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .content-section .col-lg-6 {
+        height: auto;
+        padding: 20px;
+    }
+    .content-section img {
+        height: auto;
+    }
 }
 
-textarea{
-    border: 1px solid #000;
-    height: 180px;
-    padding: 12px;
+/*Footer*/
+.footer{
+    padding: 48px 64px;
+    background: #272623;
 }
 
-/*Text styles*/
-h1{
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 120%;
+.social-icons a{
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
 }
 
-h2{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 120%;
+/*Card*/
+.card-section{
+    padding: 60px 20px;
+    text-align: center;
 }
 
-h3{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
+.card-content{
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-h4{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 130%;
+.card-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-h5{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 140%;
+.card-content h4, .card-content p{
+    flex-grow: 1;
 }
 
-h6{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 140%;
+.contact-section{
+    padding: 60px 20px;
 }
 
-.tagline{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 150%;
-}
-
-.text-large{
-    font-size: 20px;
-    line-height: 150%;
-}
-
-.text-medium{
-    font-size: 18px;
-    line-height: 150%;
-}
-
-.text-regular{
-    font-size: 16px;
-    line-height: 150%;
-}
-
-.text-small{
-    font-size: 14px;
-    line-height: 150%;
-}
-
-.text-tiny{
-    font-size: 12px;
-    line-height: 150%;
-}
-
-.light{
-    font-weight: 300;
-}
-
-.normal{
-    font-weight: 400;
-}
-
-.medium{
-    font-weight: 500;
-}
-
-.semibold{
-    font-weight: 600;
-}
-
-.bold{
-    font-weight: 700;
-}
-
-.extrabold{
-    font-weight: 800;
-}
-
-.link{
-    text-decoration-line: underline;
+.contact-info i{
+    margin-right: 10px;
 }
