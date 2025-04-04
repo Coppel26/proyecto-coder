@@ -1,0 +1,26 @@
+.card-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h4, p {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../base/variables';
+@use '../utilities/mixins';
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.button-primary {
+    @include mixins.button-style(variables.$primary-color, variables.$primary-color, variables.$secondary-color);
+    &:hover {
+        @include mixins.button-style(variables.$secondary-color, none, variables.$secondary-color);
+    }
+}
+
+.button-secondary {
+    @include mixins.button-style(variables.$secondary-color, none, variables.$secondary-color);
+    &:hover {
+        @include mixins.button-style(variables.$primary-color, variables.$primary-color, variables.$secondary-color);
+    }
+}
